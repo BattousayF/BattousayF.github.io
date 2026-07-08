@@ -13,7 +13,7 @@ const I18N = {
     "order": "Encomendar →",
     "listen": "Ouça",
     "hero.sub": "Violões de concerto feitos à mão em São Paulo, Brasil",
-    "manifesto": "Cada violão nasce de madeiras escolhidas uma a uma — jacarandá centenário, abetos alpinos colhidos em lua minguante — e de medição acústica rigorosa. Laterais duplas estruturadas, fundo ativo, a voz do instrumento projetada antes do primeiro corte.",
+    "manifesto": "Cada violão parte de uma seleção cuidadosa de madeiras — do Brasil e de outras partes do mundo — combinada a uma medição acústica precisa em cada etapa da construção.",
     "spec.top": "Tampo",
     "spec.bs": "Fundo e laterais",
     "spec.neck": "Braço",
@@ -28,7 +28,7 @@ const I18N = {
     "g6.top": "Abeto Lunar MA · Tonewood Switzerland",
     "g6.bs": "Jacarandá de barcaça · 130 anos",
     "others.lede": "Construídos sob encomenda, com o mesmo rigor de seleção de madeiras e medição acústica dos violões.",
-    "others.cava": "Cavaquinho", "others.band": "Bandolim",
+    "others.cava": "Cavaquinho", "others.band": "Bandolim", "others.flamenca": "Guitarra Flamenca",
     "m.lede": "O sistema construtivo aplicado aos violões.",
     "m1.t": "Laterais duplas estruturadas",
     "m1.p": "Laterais duplas de alta rigidez que concentram a energia das cordas no tampo, seguindo a metodologia Gore/Nicoletti.",
@@ -41,7 +41,8 @@ const I18N = {
     "m4.p": "Velocidade do som, densidade e módulo de elasticidade medidos em cada madeira antes da construção. A voz é projetada, não sorteada.",
     "about.p1": "No ateliê PAIZINHO, em São Paulo, a tradição da luteria encontra uma abordagem de engenharia: cada madeira é medida, cada instrumento é documentado, cada voz é projetada.",
     "about.p2": "Os instrumentos são construídos em pequenas séries e sob encomenda, um a um — do corte da madeira ao verniz aplicado à mão.",
-    "contact.lede": "Encomendas e consultas"
+    "contact.lede": "Encomendas e consultas",
+    "contact.whatsapp": "WhatsApp", "contact.email": "E-mail", "contact.instagram": "Instagram"
   },
   en: {
     "nav.guitars": "Guitars",
@@ -55,7 +56,7 @@ const I18N = {
     "order": "Commission →",
     "listen": "Listen",
     "hero.sub": "Handmade concert guitars from São Paulo, Brazil",
-    "manifesto": "Every guitar begins with woods chosen one by one — century-old Brazilian rosewood, alpine spruce harvested under a waning moon — and rigorous acoustic measurement. Structural double sides, an active back, the instrument's voice designed before the first cut.",
+    "manifesto": "Every guitar starts with a careful selection of woods — from Brazil and other parts of the world — combined with precise acoustic measurement at every stage of construction.",
     "spec.top": "Top",
     "spec.bs": "Back & sides",
     "spec.neck": "Neck",
@@ -70,7 +71,7 @@ const I18N = {
     "g6.top": "Moon Spruce MA · Tonewood Switzerland",
     "g6.bs": "Barge rosewood · 130 years old",
     "others.lede": "Built to order, with the same rigor in wood selection and acoustic measurement as the guitars.",
-    "others.cava": "Cavaquinho", "others.band": "Mandolin",
+    "others.cava": "Cavaquinho", "others.band": "Mandolin", "others.flamenca": "Flamenco Guitar",
     "m.lede": "The construction system applied to the guitars.",
     "m1.t": "Structural double sides",
     "m1.p": "High-stiffness double sides that concentrate string energy into the top, following the Gore/Nicoletti methodology.",
@@ -83,7 +84,8 @@ const I18N = {
     "m4.p": "Sound velocity, density and elastic modulus measured in every piece of wood before building. The voice is designed, not left to chance.",
     "about.p1": "At the PAIZINHO atelier in São Paulo, the lutherie tradition meets an engineering mindset: every wood is measured, every instrument is documented, every voice is designed.",
     "about.p2": "Instruments are built in small series and to order, one at a time — from the cutting of the wood to the hand-applied varnish.",
-    "contact.lede": "Commissions & inquiries"
+    "contact.lede": "Commissions & inquiries",
+    "contact.whatsapp": "WhatsApp", "contact.email": "Email", "contact.instagram": "Instagram"
   },
   es: {
     "nav.guitars": "Guitarras",
@@ -97,7 +99,7 @@ const I18N = {
     "order": "Encargar →",
     "listen": "Escuchar",
     "hero.sub": "Guitarras de concierto hechas a mano en São Paulo, Brasil",
-    "manifesto": "Cada guitarra nace de maderas elegidas una a una — jacarandá centenario, abetos alpinos cosechados en luna menguante — y de una rigurosa medición acústica. Aros dobles estructurados, fondo activo, la voz del instrumento diseñada antes del primer corte.",
+    "manifesto": "Cada guitarra parte de una cuidadosa selección de maderas — de Brasil y de otras partes del mundo — combinada con una medición acústica precisa en cada etapa de la construcción.",
     "spec.top": "Tapa",
     "spec.bs": "Fondo y aros",
     "spec.neck": "Mástil",
@@ -112,7 +114,7 @@ const I18N = {
     "g6.top": "Abeto Lunar MA · Tonewood Switzerland",
     "g6.bs": "Jacarandá de barcaza · 130 años",
     "others.lede": "Construidos por encargo, con el mismo rigor en la selección de maderas y medición acústica que las guitarras.",
-    "others.cava": "Cavaquinho", "others.band": "Mandolina",
+    "others.cava": "Cavaquinho", "others.band": "Mandolina", "others.flamenca": "Guitarra Flamenca",
     "m1.t": "Aros dobles estructurados",
     "m1.p": "Aros dobles de alta rigidez que concentran la energía de las cuerdas en la tapa, siguiendo la metodología Gore/Nicoletti.",
     "method.lede": "El método constructivo de las guitarras PAIZINHO.",
@@ -124,7 +126,8 @@ const I18N = {
     "m4.p": "Velocidad del sonido, densidad y módulo de elasticidad medidos en cada madera antes de la construcción. La voz se diseña, no se deja al azar.",
     "about.p1": "En el taller PAIZINHO, en São Paulo, la tradición de la luthería se encuentra con un enfoque de ingeniería: cada madera se mide, cada instrumento se documenta, cada voz se diseña.",
     "about.p2": "Los instrumentos se construyen en pequeñas series y por encargo, uno a uno — desde el corte de la madera hasta el barniz aplicado a mano.",
-    "contact.lede": "Encargos y consultas"
+    "contact.lede": "Encargos y consultas",
+    "contact.whatsapp": "WhatsApp", "contact.email": "Correo", "contact.instagram": "Instagram"
   },
   ja: {
     "nav.guitars": "ギター",
@@ -153,7 +156,7 @@ const I18N = {
     "g6.top": "ムーンスプルース MA · Tonewood Switzerland",
     "g6.bs": "運搬船由来のハカランダ · 樹齢130年",
     "others.lede": "ギターと同じ木材選定と音響測定の基準により、受注製作いたします。",
-    "others.cava": "カヴァキーニョ", "others.band": "マンドリン",
+    "others.cava": "カヴァキーニョ", "others.band": "マンドリン", "others.flamenca": "フラメンコギター",
     "m.lede": "ギターの製作に用いられる構築システムです。",
     "m1.t": "構造用二重側板",
     "m1.p": "Gore/Nicoletti の設計理論に基づく高剛性の二重側板が、弦のエネルギーを表板に集中させます。",
@@ -166,7 +169,8 @@ const I18N = {
     "m4.p": "音速・密度・ヤング率をすべての木材で測定してから製作へ。楽器の声は偶然ではなく、設計によって生まれます。",
     "about.p1": "サンパウロの PAIZINHO 工房では、伝統的な弦楽器製作と工学的アプローチが出会います。すべての木材を測定し、すべての楽器を記録し、すべての声を設計しています。",
     "about.p2": "楽器は少数のシリーズと受注製作により、一本ずつ作られます。木材の裁断から手作業のニス塗りまで。",
-    "contact.lede": "ご注文・お問い合わせ"
+    "contact.lede": "ご注文・お問い合わせ",
+    "contact.whatsapp": "WhatsApp", "contact.email": "メール", "contact.instagram": "Instagram"
   }
 };
 
@@ -348,7 +352,7 @@ const GUITARS = {
 
 const INSTRUMENTS = {
   cava: {
-    photo: "cavaquinhos.jpg",
+    photo: "cavaquinhos.jpg", video: "cl8DKpMs3GQ", verticalVideo: true,
     name: { pt: "Cavaquinho", en: "Cavaquinho", es: "Cavaquinho", ja: "カヴァキーニョ" },
     sub: {
       pt: "Sob encomenda",
@@ -364,7 +368,7 @@ const INSTRUMENTS = {
     }
   },
   band: {
-    photo: "bandolim.jpg",
+    photo: "bandolim.jpg", video: "ZLFNY8HECJs",
     name: { pt: "Bandolim", en: "Mandolin", es: "Mandolina", ja: "マンドリン" },
     sub: {
       pt: "Sob encomenda",
@@ -377,6 +381,22 @@ const INSTRUMENTS = {
       en: "Ten-string bandolims for choro and beyond — European spruce top, built to order, with a voice balanced between sparkle and body.",
       es: "Mandolinas brasileñas de diez cuerdas para el choro y más allá — tapa de abeto europeo, construcción por encargo y una voz equilibrada entre brillo y cuerpo.",
       ja: "ショーロのための10弦バンドリン。ヨーロッパ産スプルースの表板、受注製作。輝きと厚みのバランスの取れた声を持つ楽器です。"
+    }
+  },
+  flamenca: {
+    photo: "flamenca.jpg", video: "VLqTh1DsPt8",
+    name: { pt: "Guitarra Flamenca", en: "Flamenco Guitar", es: "Guitarra Flamenca", ja: "フラメンコギター" },
+    sub: {
+      pt: "Sob encomenda",
+      en: "Built to order",
+      es: "Por encargo",
+      ja: "受注製作"
+    },
+    desc: {
+      pt: "Guitarras flamencas construídas sob encomenda — resposta rápida e percussiva, projetadas para o toque e a intensidade do flamenco.",
+      en: "Flamenco guitars built to order — a quick, percussive response, designed for the touch and intensity of flamenco playing.",
+      es: "Guitarras flamencas construidas por encargo — respuesta rápida y percusiva, diseñadas para el toque y la intensidad del flamenco.",
+      ja: "受注製作のフラメンコギター。フラメンコ特有のタッチと迫力に応える、速く打楽器的な反応を持つ一本です。"
     }
   }
 };
@@ -478,6 +498,12 @@ function galleryHTML(g) {
 
 function renderInstrument(id) {
   const g = INSTRUMENTS[id];
+  const photoHTML = g.photo
+    ? `<img class="detail-photo" src="${g.photo}" alt="${g.name.pt} PAIZINHO">`
+    : `<div class="detail-photo ph" style="min-height:320px"><span class="ph-caption">${t("ph")}</span></div>`;
+  const videoHTML = g.video
+    ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap${g.verticalVideo ? " vertical" : ""}"><iframe src="https://www.youtube.com/embed/${g.video}" title="PAIZINHO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
+    : "";
   detailEl.className = "detail theme-simple";
   detailEl.innerHTML = `
     <button class="detail-back" id="detailBack">${t("back")}</button>
@@ -486,8 +512,9 @@ function renderInstrument(id) {
       <p class="detail-sub">${g.sub[currentLang] || g.sub.pt}</p>
     </div>
     <div class="detail-body">
-      <img class="detail-photo" src="${g.photo}" alt="${g.name.pt} PAIZINHO">
+      ${photoHTML}
       <p class="detail-desc">${g.desc[currentLang] || g.desc.pt}</p>
+      ${videoHTML}
       <a class="order-btn" id="orderBtn" href="#contato">${t("order")}</a>
     </div>`;
   detailEl.hidden = false;
