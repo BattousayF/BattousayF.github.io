@@ -437,7 +437,7 @@ document.querySelectorAll(".lang-switch button").forEach(btn =>
 const detailEl = document.getElementById("detail");
 
 function currentDetail() {
-  const m = location.hash.match(/^#\/(g\d|cava|band)$/);
+  const m = location.hash.match(/^#\/(g\d|cava|band|flamenca)$/);
   if (!m) return null;
   return (GUITARS[m[1]] || INSTRUMENTS[m[1]]) ? m[1] : null;
 }
