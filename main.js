@@ -11,6 +11,7 @@ const I18N = {
     "view": "Ver →",
     "back": "← Voltar",
     "order": "Encomendar →",
+    "reserve": "Reservar →",
     "listen": "Ouça",
     "hero.sub": "Violões de concerto feitos à mão em São Paulo, Brasil",
     "manifesto": "Cada violão parte de uma seleção cuidadosa de madeiras — do Brasil e de outras partes do mundo — combinada a uma medição acústica precisa em cada etapa da construção.",
@@ -53,6 +54,7 @@ const I18N = {
     "view": "View →",
     "back": "← Back",
     "order": "Commission →",
+    "reserve": "Reserve →",
     "listen": "Listen",
     "hero.sub": "Handmade concert guitars from São Paulo, Brazil",
     "manifesto": "Every guitar starts with a careful selection of woods — from Brazil and other parts of the world — combined with precise acoustic measurement at every stage of construction.",
@@ -95,6 +97,7 @@ const I18N = {
     "view": "Ver →",
     "back": "← Volver",
     "order": "Encargar →",
+    "reserve": "Reservar →",
     "listen": "Escuchar",
     "hero.sub": "Guitarras de concierto hechas a mano en São Paulo, Brasil",
     "manifesto": "Cada guitarra parte de una cuidadosa selección de maderas — de Brasil y de otras partes del mundo — combinada con una medición acústica precisa en cada etapa de la construcción.",
@@ -137,6 +140,7 @@ const I18N = {
     "view": "詳細 →",
     "back": "← 戻る",
     "order": "ご注文 →",
+    "reserve": "予約する →",
     "listen": "試聴",
     "hero.sub": "ブラジル・サンパウロで手工製作されるコンサートギター",
     "manifesto": "一本一本のギターは、厳選された木材から生まれます。百年を超えるハカランダ、下弦の月に伐採されたアルパイン・スプルース。構造用二重側板とアクティブバック、そして厳密な音響測定により、最初の一削りの前に楽器の声が設計されます。",
@@ -174,7 +178,7 @@ const I18N = {
 /* -------- dados das páginas de detalhe -------- */
 const GUITARS = {
   g1: {
-    no: "Nº 01", theme: "eclipse", photos: ["eclipse-processo.jpg"],
+    no: "Nº 01", theme: "eclipse", photos: ["eclipse-processo.jpg"], reservable: true,
     name: { pt: "Eclipse", en: "Eclipse", es: "Eclipse", ja: "エクリプス" },
     sub: {
       pt: "A sombra que revela a luz",
@@ -196,7 +200,7 @@ const GUITARS = {
     ]
   },
   g2: {
-    no: "Nº 02", theme: "eclipse", photos: ["eclipse-processo.jpg"],
+    no: "Nº 02", theme: "eclipse", photos: ["eclipse-processo.jpg"], reservable: true,
     name: { pt: "Eclipse", en: "Eclipse", es: "Eclipse", ja: "エクリプス" },
     sub: {
       pt: "A sombra que revela a luz",
@@ -218,7 +222,7 @@ const GUITARS = {
     ]
   },
   g3: {
-    no: "Nº 03", theme: "maple", photos: ["maple-processo.jpg"],
+    no: "Nº 03", theme: "maple", photos: ["maple-processo.jpg"], reservable: true,
     name: { pt: "Maple", en: "Maple", es: "Maple", ja: "メイプル" },
     sub: {
       pt: "Figuras raras, linhas tradicionais",
@@ -239,7 +243,7 @@ const GUITARS = {
     ]
   },
   g4: {
-    no: "Nº 04", theme: "imbuia",
+    no: "Nº 04", theme: "imbuia", reservable: true,
     name: { pt: "Imbuia", en: "Imbuia", es: "Imbuia", ja: "インブイア" },
     sub: {
       pt: "O calor das madeiras do sul",
@@ -259,7 +263,7 @@ const GUITARS = {
     ]
   },
   g5: {
-    no: "Nº 05", theme: "arariba",
+    no: "Nº 05", theme: "arariba", reservable: true,
     name: { pt: "Arariba", en: "Arariba", es: "Arariba", ja: "アラリバ" },
     sub: {
       pt: "Dos Alpes ao Brasil",
@@ -279,7 +283,7 @@ const GUITARS = {
     ]
   },
   g6: {
-    no: "Nº 06", theme: "sakura", kanji: "一片", photos: ["hitohira-madeiras.jpg"],
+    no: "Nº 06", theme: "sakura", kanji: "一片", photos: ["hitohira-madeiras.jpg"], reservable: true,
     name: { pt: "Hitohira", en: "Hitohira", es: "Hitohira", ja: "一片（ひとひら）" },
     sub: {
       pt: "Uma pétala que cai",
@@ -493,11 +497,24 @@ function renderDetail(id) {
       ${g.video ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap"><iframe src="https://www.youtube.com/embed/${g.video}" title="Fernando Paizinho Guitars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>` : ""}
       <dl class="spec">${specRows}</dl>
       <div class="detail-gallery">${galleryHTML(g)}</div>
+      ${g.reservable ? `<a class="order-btn" id="reserveBtn" href="#contato">${t("reserve")}</a>` : ""}
     </div>`;
   detailEl.hidden = false;
   document.body.classList.add("detail-open");
   detailEl.scrollTop = 0;
   document.getElementById("detailBack").addEventListener("click", closeDetail);
+  const reserveBtn = document.getElementById("reserveBtn");
+  if (reserveBtn) {
+    reserveBtn.addEventListener("click", e => {
+      e.preventDefault();
+      history.pushState("", document.title, location.pathname + "#contato");
+      detailEl.hidden = true;
+      detailEl.innerHTML = "";
+      document.body.classList.remove("detail-open");
+      const c = document.getElementById("contato");
+      if (c) c.scrollIntoView({ behavior: "smooth" });
+    });
+  }
 }
 
 function galleryHTML(g, minSlots = 3) {
