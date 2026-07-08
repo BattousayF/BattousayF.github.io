@@ -1,4 +1,4 @@
-/* PAIZINHO — i18n PT/EN/JA + páginas de detalhe + interações */
+/* Fernando Paizinho Guitars — i18n PT/EN/JA + páginas de detalhe + interações */
 
 const I18N = {
   pt: {
@@ -29,17 +29,16 @@ const I18N = {
     "g6.bs": "Jacarandá de barcaça · 130 anos",
     "others.lede": "Construídos sob encomenda, com o mesmo rigor de seleção de madeiras e medição acústica dos violões.",
     "others.cava": "Cavaquinho", "others.band": "Bandolim", "others.classica": "Violão Clássico", "others.flamenca": "Guitarra Flamenca",
-    "m.lede": "Este é o método construtivo dos violões de cordas de aço autorais PAIZINHO. Os violões clássicos seguem uma construção tradicional própria.",
+    "m.lede": "Este é o método construtivo dos violões de cordas de aço autorais da Fernando Paizinho Guitars. Os violões clássicos seguem uma construção tradicional própria.",
     "m1.t": "Laterais duplas estruturadas",
-    "m1.p": "Laterais duplas de alta rigidez que concentram a energia das cordas no tampo, seguindo a metodologia Gore/Nicoletti.",
-    "method.lede": "O método construtivo dos violões PAIZINHO.",
+    "m1.p": "Laterais duplas de alta rigidez que concentram a energia das cordas no tampo, com base na escola de Gore e Nicoletti, adaptada ao olhar autoral de Fernando Paizinho.",
     "m2.t": "Fundo ativo",
     "m2.p": "O fundo trabalha junto com o tampo, afinado por modos de vibração para ampliar a projeção do instrumento.",
     "m3.t": "Tampos selecionados",
     "m3.p": "Abeto europeu e alpino de lua minguante, redwood, sinker redwood, red cedar, sinker cedar — o tampo é escolhido para a voz de cada instrumento, incluindo abetos selecionados pessoalmente na Tonewood Switzerland, em Bergün.",
     "m4.t": "Medição acústica",
     "m4.p": "Velocidade do som, densidade e módulo de elasticidade medidos em cada madeira antes da construção. A voz é projetada, não sorteada.",
-    "about.p1": "No ateliê PAIZINHO, em São Paulo, a tradição da luteria encontra uma abordagem de engenharia: cada madeira é medida, cada instrumento é documentado, cada voz é projetada.",
+    "about.p1": "No ateliê da Fernando Paizinho Guitars, em São Paulo, a tradição da luteria encontra uma abordagem de engenharia: cada madeira é medida, cada instrumento é documentado, cada voz é projetada.",
     "about.p2": "Os instrumentos são construídos em pequenas séries e sob encomenda, um a um — do corte da madeira ao verniz aplicado à mão.",
     "contact.lede": "Encomendas e consultas",
     "contact.whatsapp": "WhatsApp", "contact.email": "E-mail", "contact.instagram": "Instagram"
@@ -72,17 +71,16 @@ const I18N = {
     "g6.bs": "Barge rosewood · 130 years old",
     "others.lede": "Built to order, with the same rigor in wood selection and acoustic measurement as the guitars.",
     "others.cava": "Cavaquinho", "others.band": "Mandolin", "others.classica": "Classical Guitar", "others.flamenca": "Flamenco Guitar",
-    "m.lede": "This is the construction method behind PAIZINHO's signature steel-string guitars. Classical guitars follow their own traditional construction.",
+    "m.lede": "This is the construction method behind Fernando Paizinho Guitars' signature steel-string models. Classical guitars follow their own traditional construction.",
     "m1.t": "Structural double sides",
-    "m1.p": "High-stiffness double sides that concentrate string energy into the top, following the Gore/Nicoletti methodology.",
-    "method.lede": "The construction method behind PAIZINHO guitars.",
+    "m1.p": "High-stiffness double sides that concentrate string energy into the top, drawing on the Gore/Nicoletti school and adapted through the personal approach of Fernando Paizinho.",
     "m2.t": "Active back",
     "m2.p": "The back works together with the top, tuned by vibration modes to extend the instrument's projection.",
     "m3.t": "Selected soundboards",
     "m3.p": "European and moon-harvested alpine spruce, redwood, sinker redwood, red cedar, sinker cedar — each top is chosen for the voice of the instrument, including spruce personally selected at Tonewood Switzerland in Bergün.",
     "m4.t": "Acoustic measurement",
     "m4.p": "Sound velocity, density and elastic modulus measured in every piece of wood before building. The voice is designed, not left to chance.",
-    "about.p1": "At the PAIZINHO atelier in São Paulo, the lutherie tradition meets an engineering mindset: every wood is measured, every instrument is documented, every voice is designed.",
+    "about.p1": "At the Fernando Paizinho Guitars atelier in São Paulo, the lutherie tradition meets an engineering mindset: every wood is measured, every instrument is documented, every voice is designed.",
     "about.p2": "Instruments are built in small series and to order, one at a time — from the cutting of the wood to the hand-applied varnish.",
     "contact.lede": "Commissions & inquiries",
     "contact.whatsapp": "WhatsApp", "contact.email": "Email", "contact.instagram": "Instagram"
@@ -116,15 +114,15 @@ const I18N = {
     "others.lede": "Construidos por encargo, con el mismo rigor en la selección de maderas y medición acústica que las guitarras.",
     "others.cava": "Cavaquinho", "others.band": "Mandolina", "others.classica": "Guitarra Clásica", "others.flamenca": "Guitarra Flamenca",
     "m1.t": "Aros dobles estructurados",
-    "m1.p": "Aros dobles de alta rigidez que concentran la energía de las cuerdas en la tapa, siguiendo la metodología Gore/Nicoletti.",
-    "m.lede": "Este es el método constructivo de las guitarras de cuerdas de acero originales de PAIZINHO. Las guitarras clásicas siguen una construcción tradicional propia.",
+    "m1.p": "Aros dobles de alta rigidez que concentran la energía de las cuerdas en la tapa, con base en la escuela de Gore y Nicoletti, adaptada a la mirada autoral de Fernando Paizinho.",
+    "m.lede": "Este es el método constructivo de las guitarras de cuerdas de acero originales de Fernando Paizinho Guitars. Las guitarras clásicas siguen una construcción tradicional propia.",
     "m2.t": "Fondo activo",
     "m2.p": "El fondo trabaja junto con la tapa, afinado por modos de vibración para ampliar la proyección del instrumento.",
     "m3.t": "Tapas seleccionadas",
     "m3.p": "Abeto europeo y alpino de luna menguante, redwood, sinker redwood, red cedar, sinker cedar — cada tapa se elige según la voz del instrumento, incluyendo abetos seleccionados personalmente en Tonewood Switzerland, en Bergün.",
     "m4.t": "Medición acústica",
     "m4.p": "Velocidad del sonido, densidad y módulo de elasticidad medidos en cada madera antes de la construcción. La voz se diseña, no se deja al azar.",
-    "about.p1": "En el taller PAIZINHO, en São Paulo, la tradición de la luthería se encuentra con un enfoque de ingeniería: cada madera se mide, cada instrumento se documenta, cada voz se diseña.",
+    "about.p1": "En el taller de Fernando Paizinho Guitars, en São Paulo, la tradición de la luthería se encuentra con un enfoque de ingeniería: cada madera se mide, cada instrumento se documenta, cada voz se diseña.",
     "about.p2": "Los instrumentos se construyen en pequeñas series y por encargo, uno a uno — desde el corte de la madera hasta el barniz aplicado a mano.",
     "contact.lede": "Encargos y consultas",
     "contact.whatsapp": "WhatsApp", "contact.email": "Correo", "contact.instagram": "Instagram"
@@ -157,17 +155,16 @@ const I18N = {
     "g6.bs": "運搬船由来のハカランダ · 樹齢130年",
     "others.lede": "ギターと同じ木材選定と音響測定の基準により、受注製作いたします。",
     "others.cava": "カヴァキーニョ", "others.band": "マンドリン", "others.classica": "クラシックギター", "others.flamenca": "フラメンコギター",
-    "m.lede": "これはPAIZINHOのオリジナルスチール弦ギターの製作方法です。クラシックギターは伝統的な独自の製法で作られます。",
+    "m.lede": "これはFernando Paizinho Guitarsのオリジナルスチール弦ギターの製作方法です。クラシックギターは伝統的な独自の製法で作られます。",
     "m1.t": "構造用二重側板",
-    "m1.p": "Gore/Nicoletti の設計理論に基づく高剛性の二重側板が、弦のエネルギーを表板に集中させます。",
-    "method.lede": "PAIZINHO ギターの製作方法。",
+    "m1.p": "Gore と Nicoletti の理論を参考にしながら、フェルナンド・パイジーニョ独自の解釈を加えた高剛性の二重側板が、弦のエネルギーを表板に集中させます。",
     "m2.t": "アクティブバック",
     "m2.p": "裏板が表板とともに振動するよう振動モードを調整し、楽器の音の伸びと投射力を高めます。",
     "m3.t": "厳選された表板",
     "m3.p": "ヨーロッパ産および月齢伐採のアルパインスプルース、レッドウッド、シンカー・レッドウッド、レッドシダー、シンカーシダー。楽器の声に合わせて表板を選びます。スイス・ベルギュンの Tonewood Switzerland で直接選定したスプルースも用いています。",
     "m4.t": "音響測定",
     "m4.p": "音速・密度・ヤング率をすべての木材で測定してから製作へ。楽器の声は偶然ではなく、設計によって生まれます。",
-    "about.p1": "サンパウロの PAIZINHO 工房では、伝統的な弦楽器製作と工学的アプローチが出会います。すべての木材を測定し、すべての楽器を記録し、すべての声を設計しています。",
+    "about.p1": "サンパウロの Fernando Paizinho Guitars 工房では、伝統的な弦楽器製作と工学的アプローチが出会います。すべての木材を測定し、すべての楽器を記録し、すべての声を設計しています。",
     "about.p2": "楽器は少数のシリーズと受注製作により、一本ずつ作られます。木材の裁断から手作業のニス塗りまで。",
     "contact.lede": "ご注文・お問い合わせ",
     "contact.whatsapp": "WhatsApp", "contact.email": "メール", "contact.instagram": "Instagram"
@@ -313,10 +310,10 @@ const GUITARS = {
       ja: "レッドウッドとブラジリアン・ローズウッド"
     },
     desc: {
-      pt: "Violão concluído: tampo de redwood sobre jacarandá-da-bahia, com filetes em abalone. A combinação clássica da luteria brasileira — graves profundos, agudos cristalinos — no desenho PAIZINHO.",
-      en: "A completed guitar: redwood top over Brazilian rosewood, with abalone purfling. The classic pairing of Brazilian lutherie — deep basses, crystalline trebles — in the PAIZINHO design.",
-      es: "Una guitarra terminada: tapa de redwood sobre jacarandá de Bahía, con filetes de abulón. La combinación clásica de la luthería brasileña — graves profundos, agudos cristalinos — en el diseño PAIZINHO.",
-      ja: "完成した一本。レッドウッドの表板とブラジリアン・ローズウッド、アバロンのパーフリング。深い低音と透明な高音 — ブラジル弦楽器製作の王道の組み合わせを、PAIZINHO のデザインで。"
+      pt: "Violão concluído: tampo de redwood sobre jacarandá-da-bahia, com filetes em abalone. A combinação clássica da luteria brasileira — graves profundos, agudos cristalinos — no desenho da Fernando Paizinho Guitars.",
+      en: "A completed guitar: redwood top over Brazilian rosewood, with abalone purfling. The classic pairing of Brazilian lutherie — deep basses, crystalline trebles — in the Fernando Paizinho Guitars design.",
+      es: "Una guitarra terminada: tapa de redwood sobre jacarandá de Bahía, con filetes de abulón. La combinación clásica de la luthería brasileña — graves profundos, agudos cristalinos — en el diseño de Fernando Paizinho Guitars.",
+      ja: "完成した一本。レッドウッドの表板とブラジリアン・ローズウッド、アバロンのパーフリング。深い低音と透明な高音 — ブラジル弦楽器製作の王道の組み合わせを、Fernando Paizinho Guitars のデザインで。"
     },
     specs: [
       ["spec.top", { all: "Redwood" }],
@@ -334,10 +331,10 @@ const GUITARS = {
       ja: "工房の一本"
     },
     desc: {
-      pt: "O violão pessoal do luthier: pau-brasil — a madeira que deu nome ao país — em fundo e laterais, sob tampo de sinker redwood com filetes verdes. Permanece no estúdio como referência de voz e acabamento do trabalho PAIZINHO.",
-      en: "The luthier's personal guitar: Pernambuco — the wood that gave Brazil its name — for back and sides, beneath a sinker redwood top with green purfling. It remains in the studio as the reference for the voice and finish of PAIZINHO work.",
-      es: "La guitarra personal del luthier: palo Brasil — la madera que dio nombre al país — en fondo y aros, bajo una tapa de sinker redwood con filetes verdes. Permanece en el taller como referencia de voz y acabado del trabajo PAIZINHO.",
-      ja: "製作家自身のギター。ブラジルの国名の由来となった木、ペルナンブーコ（パウ・ブラジル）の裏板・側板に、緑のパーフリングを施したシンカー・レッドウッドの表板。PAIZINHO の音と仕上げの基準として、工房に置かれています。"
+      pt: "O violão pessoal do luthier: pau-brasil — a madeira que deu nome ao país — em fundo e laterais, sob tampo de sinker redwood com filetes verdes. Permanece no estúdio como referência de voz e acabamento do trabalho da Fernando Paizinho Guitars.",
+      en: "The luthier's personal guitar: Pernambuco — the wood that gave Brazil its name — for back and sides, beneath a sinker redwood top with green purfling. It remains in the studio as the reference for the voice and finish of Fernando Paizinho Guitars' work.",
+      es: "La guitarra personal del luthier: palo Brasil — la madera que dio nombre al país — en fondo y aros, bajo una tapa de sinker redwood con filetes verdes. Permanece en el taller como referencia de voz y acabado del trabajo de Fernando Paizinho Guitars.",
+      ja: "製作家自身のギター。ブラジルの国名の由来となった木、ペルナンブーコ（パウ・ブラジル）の裏板・側板に、緑のパーフリングを施したシンカー・レッドウッドの表板。Fernando Paizinho Guitars の音と仕上げの基準として、工房に置かれています。"
     },
     specs: [
       ["spec.top", { all: "Sinker Redwood" }],
@@ -361,10 +358,10 @@ const INSTRUMENTS = {
       ja: "受注製作"
     },
     desc: {
-      pt: "Cavaquinhos de concerto construídos um a um, sob encomenda — madeiras selecionadas do Brasil e do mundo, roseta em mosaico e acabamento à mão, com a mesma atenção acústica dos violões PAIZINHO.",
-      en: "Concert cavaquinhos built one at a time, to order — selected woods from Brazil and around the world, mosaic rosette and hand-applied finish, with the same acoustic care as PAIZINHO guitars.",
-      es: "Cavaquinhos de concierto construidos uno a uno, por encargo — maderas seleccionadas de Brasil y del mundo, roseta de mosaico y acabado a mano, con el mismo cuidado acústico que las guitarras PAIZINHO.",
-      ja: "コンサート用カヴァキーニョを一本ずつ受注製作しています。ブラジル産および世界各地から厳選された木材、モザイクのロゼッタ、手作業の仕上げ。PAIZINHO ギターと同じ音響へのこだわりを注いでいます。"
+      pt: "Cavaquinhos de concerto construídos um a um, sob encomenda — madeiras selecionadas do Brasil e do mundo, roseta em mosaico e acabamento à mão, com a mesma atenção acústica dos instrumentos Fernando Paizinho Guitars.",
+      en: "Concert cavaquinhos built one at a time, to order — selected woods from Brazil and around the world, mosaic rosette and hand-applied finish, with the same acoustic care as Fernando Paizinho Guitars instruments.",
+      es: "Cavaquinhos de concierto construidos uno a uno, por encargo — maderas seleccionadas de Brasil y del mundo, roseta de mosaico y acabado a mano, con el mismo cuidado acústico que los instrumentos Fernando Paizinho Guitars.",
+      ja: "コンサート用カヴァキーニョを一本ずつ受注製作しています。ブラジル産および世界各地から厳選された木材、モザイクのロゼッタ、手作業の仕上げ。Fernando Paizinho Guitars と同じ音響へのこだわりを注いでいます。"
     }
   },
   band: {
@@ -491,7 +488,7 @@ function renderDetail(id) {
     </div>
     <div class="detail-body">
       <p class="detail-desc">${g.desc[currentLang] || g.desc.pt}</p>
-      ${g.video ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap"><iframe src="https://www.youtube.com/embed/${g.video}" title="PAIZINHO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>` : ""}
+      ${g.video ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap"><iframe src="https://www.youtube.com/embed/${g.video}" title="Fernando Paizinho Guitars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>` : ""}
       <dl class="spec">${specRows}</dl>
       <div class="detail-gallery">${galleryHTML(g)}</div>
     </div>`;
@@ -516,11 +513,11 @@ function galleryHTML(g) {
 function renderInstrument(id) {
   const g = INSTRUMENTS[id];
   const photoHTML = g.photo
-    ? `<img class="detail-photo" src="${g.photo}" alt="${g.name.pt} PAIZINHO">`
+    ? `<img class="detail-photo" src="${g.photo}" alt="${g.name.pt} Fernando Paizinho Guitars">`
     : `<div class="detail-photo ph" style="min-height:320px"><span class="ph-caption">${t("ph")}</span></div>`;
   const galleryBlock = g.photos ? `<div class="detail-gallery">${galleryHTML(g)}</div>` : "";
   const videoHTML = g.video
-    ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap${g.verticalVideo ? " vertical" : ""}"><iframe src="https://www.youtube.com/embed/${g.video}" title="PAIZINHO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
+    ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap${g.verticalVideo ? " vertical" : ""}"><iframe src="https://www.youtube.com/embed/${g.video}" title="Fernando Paizinho Guitars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
     : "";
   detailEl.className = "detail theme-simple";
   detailEl.innerHTML = `
