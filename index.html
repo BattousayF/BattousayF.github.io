@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAIZINHO — Luthier</title>
+<meta name="description" content="Violões de concerto feitos à mão em São Paulo, Brasil. Handmade concert guitars. ブラジル製手工ギター。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#top" class="wordmark">PAIZINHO</a>
+  <nav class="site-nav" id="siteNav">
+    <a href="#violoes" data-i18n="nav.guitars">Violões</a>
+    <a href="#outros" data-i18n="nav.others">Outros instrumentos</a>
+    <a href="#metodo" data-i18n="nav.method">Método</a>
+    <a href="#sobre" data-i18n="nav.about">Sobre</a>
+    <a href="#contato" data-i18n="nav.contact">Contato</a>
+  </nav>
+  <div class="lang-switch" role="group" aria-label="Idioma">
+    <button data-lang="pt" class="active">PT</button><span>·</span>
+    <button data-lang="en">EN</button><span>·</span>
+    <button data-lang="es">ES</button><span>·</span>
+    <button data-lang="ja">日本語</button>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-photo">
+      <img src="hero.jpg" alt="Violão PAIZINHO — tampo de cedro com detalhes em abalone" class="hero-img">
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-title">PAIZINHO</h1>
+      <p class="hero-role">GUITARMAKER</p>
+    </div>
+    <div class="hero-kanji" aria-hidden="true">一片</div>
+  </section>
+
+  <section class="manifesto reveal">
+    <p data-i18n="manifesto">Cada violão nasce de madeiras escolhidas uma a uma — jacarandá centenário, abetos alpinos colhidos em lua minguante — e de medição acústica rigorosa. Laterais duplas estruturadas, fundo ativo, a voz do instrumento projetada antes do primeiro corte.</p>
+  </section>
+
+  <section id="violoes" class="section">
+    <h2 class="section-title" data-i18n="nav.guitars">Violões</h2>
+
+    <article class="guitar featured reveal clickable" data-guitar="g6" tabindex="0" role="link">
+      <div class="guitar-photo ph tall"><span class="ph-caption" data-i18n="ph">FOTOGRAFIA · EM BREVE</span></div>
+      <div class="guitar-info">
+        <div class="vertical-kanji" aria-hidden="true">一片</div>
+        <p class="guitar-no">Nº 06</p>
+        <h3 class="guitar-name">Hitohira</h3>
+        <p class="guitar-desc" data-i18n="g6.desc">Jacarandá resgatado de uma barcaça de cacau com 130 anos, sob tampo de abeto lunar Master Alpine. Uma pétala que cai: singular, irrepetível.</p>
+        <dl class="spec">
+          <div><dt data-i18n="spec.top">Tampo</dt><dd data-i18n="g6.top">Abeto Lunar MA · Tonewood Switzerland</dd></div>
+          <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="g6.bs">Jacarandá de barcaça · 130 anos</dd></div>
+        </dl>
+        <p class="view-link" data-i18n="view">Ver →</p>
+      </div>
+    </article>
+
+    <div class="guitar-grid">
+
+      <article class="guitar reveal clickable" data-guitar="g1" tabindex="0" role="link">
+        <div class="guitar-photo"><img class="card-img" src="eclipse-processo.jpg" alt="Violões Eclipse em construção"></div>
+        <div class="guitar-info">
+          <p class="guitar-no">Nº 01</p>
+          <h3 class="guitar-name">Eclipse</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd>Sinker Redwood</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="w.jacba">Jacarandá baiano</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+
+      <article class="guitar reveal clickable" data-guitar="g2" tabindex="0" role="link">
+        <div class="guitar-photo"><img class="card-img" src="eclipse-processo.jpg" alt="Violões Eclipse em construção"></div>
+        <div class="guitar-info">
+          <p class="guitar-no">Nº 02</p>
+          <h3 class="guitar-name">Eclipse</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd>Sinker Redwood</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="w.jacba">Jacarandá baiano</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+
+      <article class="guitar reveal clickable" data-guitar="g3" tabindex="0" role="link">
+        <div class="guitar-photo"><img class="card-img" src="maple-processo.jpg" alt="Violão Maple em construção"></div>
+        <div class="guitar-info">
+          <p class="guitar-no">Nº 03</p>
+          <h3 class="guitar-name" data-i18n="g3.name">Maple</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd>Curly Redwood</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd>Birds Eye Maple</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+
+      <article class="guitar reveal clickable" data-guitar="g4" tabindex="0" role="link">
+        <div class="guitar-photo ph"><span class="ph-caption" data-i18n="ph">FOTOGRAFIA · EM BREVE</span></div>
+        <div class="guitar-info">
+          <p class="guitar-no">Nº 04</p>
+          <h3 class="guitar-name" data-i18n="g4.name">Imbuia</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd data-i18n="g4.top">Cedro canadense</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="g4.bs">Imbuia figurada</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+
+      <article class="guitar reveal clickable" data-guitar="g5" tabindex="0" role="link">
+        <div class="guitar-photo ph"><span class="ph-caption" data-i18n="ph">FOTOGRAFIA · EM BREVE</span></div>
+        <div class="guitar-info">
+          <p class="guitar-no">Nº 05</p>
+          <h3 class="guitar-name" data-i18n="g5.name">Arariba</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd data-i18n="g5.top">Abeto Lunar AA · Tonewood Switzerland</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="g5.bs">Arariba amarelo</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+
+      <article class="guitar reveal clickable" data-guitar="g8" tabindex="0" role="link">
+        <div class="guitar-photo"><img class="card-img" src="jacaranda-frente.jpg" alt="Violão Jacarandá — redwood e jacarandá-da-bahia"></div>
+        <div class="guitar-info">
+          <p class="guitar-no" data-i18n="lbl.done">Vendido</p>
+          <h3 class="guitar-name" data-i18n="g8.name">Jacarandá</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd>Redwood</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="g8.bs">Jacarandá-da-bahia</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+
+      <article class="guitar reveal clickable" data-guitar="g7" tabindex="0" role="link">
+        <div class="guitar-photo"><img class="card-img" src="pernambuco.jpg" alt="Violão Pernambuco — pau-brasil e sinker redwood"></div>
+        <div class="guitar-info">
+          <p class="guitar-no" data-i18n="g7.label">Instrumento pessoal</p>
+          <h3 class="guitar-name">Pernambuco</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd>Sinker Redwood</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="g7.bs">Pau-brasil</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="outros" class="section reveal">
+    <h2 class="section-title" data-i18n="nav.others">Outros instrumentos</h2>
+    <p class="section-lede" data-i18n="others.lede">Construídos sob encomenda, com o mesmo rigor de seleção de madeiras e medição acústica dos violões.</p>
+    <div class="others-row">
+      <div class="other clickable" data-inst="cava" tabindex="0" role="link">
+        <div class="other-photo"><img class="card-img" src="cavaquinhos.jpg" alt="Cavaquinhos PAIZINHO"></div>
+        <h3 data-i18n="others.cava">Cavaquinho</h3>
+        <p class="view-link" data-i18n="view">Ver →</p>
+      </div>
+      <div class="other clickable" data-inst="band" tabindex="0" role="link">
+        <div class="other-photo"><img class="card-img" src="bandolim.jpg" alt="Bandolim PAIZINHO"></div>
+        <h3 data-i18n="others.band">Bandolim</h3>
+        <p class="view-link" data-i18n="view">Ver →</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="metodo" class="section reveal">
+    <h2 class="section-title" data-i18n="nav.method">Método</h2>
+    <p class="section-lede" data-i18n="m.lede">O sistema construtivo aplicado aos violões.</p>
+    <div class="method-grid">
+      <div class="method-item">
+        <h3 data-i18n="m1.t">Laterais duplas estruturadas</h3>
+        <p data-i18n="m1.p">Rigidez estrutural que concentra a energia das cordas no tampo, seguindo a metodologia Gore/Nicoletti.</p>
+      </div>
+      <div class="method-item">
+        <h3 data-i18n="m2.t">Fundo ativo</h3>
+        <p data-i18n="m2.p">O fundo trabalha junto com o tampo, afinado por modos de vibração para ampliar a projeção do instrumento.</p>
+      </div>
+      <div class="method-item">
+        <h3 data-i18n="m3.t">Tampos selecionados</h3>
+        <p data-i18n="m3.p">Abeto europeu e alpino de lua minguante, redwood, sinker redwood, red cedar, sinker cedar — o tampo é escolhido para a voz de cada instrumento, incluindo abetos selecionados pessoalmente na Tonewood Switzerland, em Bergün.</p>
+      </div>
+      <div class="method-item">
+        <h3 data-i18n="m4.t">Medição acústica</h3>
+        <p data-i18n="m4.p">Velocidade do som, densidade e módulo de elasticidade medidos em cada madeira antes da construção. A voz é projetada, não sorteada.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section reveal">
+    <h2 class="section-title" data-i18n="nav.about">Sobre</h2>
+    <div class="about">
+      <div class="about-photo"><img class="card-img" src="fernando.jpg" alt="Fernando Paizinho"></div>
+      <div class="about-text">
+        <p data-i18n="about.p1">No ateliê PAIZINHO, em São Paulo, a tradição da luteria encontra uma abordagem de engenharia: cada madeira é medida, cada instrumento é documentado, cada voz é projetada.</p>
+        <p data-i18n="about.p2">Os instrumentos são construídos em pequenas séries e sob encomenda, um a um — do corte da madeira ao verniz aplicado à mão.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2 class="section-title light" data-i18n="nav.contact">Contato</h2>
+    <p class="contact-lede" data-i18n="contact.lede">Encomendas e consultas</p>
+    <a class="contact-mail" href="mailto:contato@paizinholuthier.com">contato@paizinholuthier.com</a>
+    <a class="contact-ig" href="https://instagram.com/paizinho_luthier" target="_blank" rel="noopener">Instagram · @paizinho_luthier</a>
+    <p class="footer-line">PAIZINHO — São Paulo, Brasil</p>
+  </section>
+
+</main>
+
+<div id="detail" hidden></div>
+
+<script src="main.js"></script>
+</body>
+</html>
