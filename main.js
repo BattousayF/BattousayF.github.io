@@ -3,6 +3,7 @@
 const I18N = {
   pt: {
     "nav.guitars": "Violões",
+    "violoes.lede": "Violões de cordas de aço autorais",
     "nav.others": "Outros instrumentos",
     "nav.method": "Método",
     "nav.about": "Sobre",
@@ -40,12 +41,13 @@ const I18N = {
     "m4.t": "Medição acústica",
     "m4.p": "Velocidade do som, densidade e módulo de elasticidade medidos em cada madeira antes da construção. A voz é projetada, não sorteada.",
     "about.p1": "No ateliê da Fernando Paizinho Guitars, em São Paulo, a tradição da luteria encontra uma abordagem de engenharia: cada madeira é medida, cada instrumento é documentado, cada voz é projetada.",
-    "about.p2": "Os instrumentos são construídos em pequenas séries e sob encomenda, um a um — do corte da madeira ao verniz aplicado à mão.",
+    "about.p2": "Cada instrumento é feito inteiramente à mão, do primeiro corte ao verniz final, sem intermediários — só o luthier e a madeira.",
     "contact.lede": "Encomendas e consultas",
     "contact.whatsapp": "WhatsApp", "contact.email": "E-mail", "contact.instagram": "Instagram"
   },
   en: {
     "nav.guitars": "Guitars",
+    "violoes.lede": "Signature steel-string guitars",
     "nav.others": "Other instruments",
     "nav.method": "Method",
     "nav.about": "About",
@@ -83,12 +85,13 @@ const I18N = {
     "m4.t": "Acoustic measurement",
     "m4.p": "Sound velocity, density and elastic modulus measured in every piece of wood before building. The voice is designed, not left to chance.",
     "about.p1": "At the Fernando Paizinho Guitars atelier in São Paulo, the lutherie tradition meets an engineering mindset: every wood is measured, every instrument is documented, every voice is designed.",
-    "about.p2": "Instruments are built in small series and to order, one at a time — from the cutting of the wood to the hand-applied varnish.",
+    "about.p2": "Each instrument is made entirely by hand, from the first cut to the final varnish, with no intermediaries — just the luthier and the wood.",
     "contact.lede": "Commissions & inquiries",
     "contact.whatsapp": "WhatsApp", "contact.email": "Email", "contact.instagram": "Instagram"
   },
   es: {
     "nav.guitars": "Guitarras",
+    "violoes.lede": "Guitarras de cuerdas de acero originales",
     "nav.others": "Otros instrumentos",
     "nav.method": "Método",
     "nav.about": "Sobre",
@@ -126,12 +129,13 @@ const I18N = {
     "m4.t": "Medición acústica",
     "m4.p": "Velocidad del sonido, densidad y módulo de elasticidad medidos en cada madera antes de la construcción. La voz se diseña, no se deja al azar.",
     "about.p1": "En el taller de Fernando Paizinho Guitars, en São Paulo, la tradición de la luthería se encuentra con un enfoque de ingeniería: cada madera se mide, cada instrumento se documenta, cada voz se diseña.",
-    "about.p2": "Los instrumentos se construyen en pequeñas series y por encargo, uno a uno — desde el corte de la madera hasta el barniz aplicado a mano.",
+    "about.p2": "Cada instrumento se hace enteramente a mano, desde el primer corte hasta el barniz final, sin intermediarios — solo el luthier y la madera.",
     "contact.lede": "Encargos y consultas",
     "contact.whatsapp": "WhatsApp", "contact.email": "Correo", "contact.instagram": "Instagram"
   },
   ja: {
     "nav.guitars": "ギター",
+    "violoes.lede": "オリジナルスチール弦ギター",
     "nav.others": "その他の楽器",
     "nav.method": "製作方法",
     "nav.about": "製作家について",
@@ -169,7 +173,7 @@ const I18N = {
     "m4.t": "音響測定",
     "m4.p": "音速・密度・ヤング率をすべての木材で測定してから製作へ。楽器の声は偶然ではなく、設計によって生まれます。",
     "about.p1": "サンパウロの Fernando Paizinho Guitars 工房では、伝統的な弦楽器製作と工学的アプローチが出会います。すべての木材を測定し、すべての楽器を記録し、すべての声を設計しています。",
-    "about.p2": "楽器は少数のシリーズと受注製作により、一本ずつ作られます。木材の裁断から手作業のニス塗りまで。",
+    "about.p2": "すべての楽器は、最初の一削りから最終のニス塗りまで、完全に手作業で作られます。仲介者はなく、ただ職人と木材だけです。",
     "contact.lede": "ご注文・お問い合わせ",
     "contact.whatsapp": "WhatsApp", "contact.email": "メール", "contact.instagram": "Instagram"
   }
