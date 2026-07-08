@@ -350,6 +350,7 @@ const GUITARS = {
 const INSTRUMENTS = {
   cava: {
     photo: "cavaquinhos.jpg", video: "cl8DKpMs3GQ", verticalVideo: true,
+    photos: ["cava-caso1.jpg","cava-caso2.jpg","cava-fundo.jpg","cava-tampo.jpg","cava-maple-detalhe.jpg","cava-maple-cavalete.jpg","cava-maple-tampo2.jpg","cava-maple-fundo.jpg"],
     name: { pt: "Cavaquinho", en: "Cavaquinho", es: "Cavaquinho", ja: "カヴァキーニョ" },
     sub: {
       pt: "Sob encomenda",
@@ -366,6 +367,7 @@ const INSTRUMENTS = {
   },
   band: {
     photo: "bandolim.jpg", video: "YDqFIkNvIJA", verticalVideo: true,
+    photos: ["bandolim-caso.jpg","bandolim-cabeca.jpg","bandolim-tampo.jpg"],
     name: { pt: "Bandolim", en: "Mandolin", es: "Mandolina", ja: "マンドリン" },
     sub: {
       pt: "Sob encomenda",
@@ -498,13 +500,13 @@ function renderDetail(id) {
   document.getElementById("detailBack").addEventListener("click", closeDetail);
 }
 
-function galleryHTML(g) {
+function galleryHTML(g, minSlots = 3) {
   const photos = g.photos || [];
   let out = "";
-  photos.slice(0, 3).forEach(p => {
+  photos.forEach(p => {
     out += `<div class="gal"><img class="card-img" src="${p}" alt=""></div>`;
   });
-  for (let i = photos.length; i < 3; i++) {
+  for (let i = photos.length; i < minSlots; i++) {
     out += `<div class="ph"><span class="ph-caption">${t("ph")}</span></div>`;
   }
   return out;
@@ -515,7 +517,7 @@ function renderInstrument(id) {
   const photoHTML = g.photo
     ? `<img class="detail-photo" src="${g.photo}" alt="${g.name.pt} Fernando Paizinho Guitars">`
     : `<div class="detail-photo ph" style="min-height:320px"><span class="ph-caption">${t("ph")}</span></div>`;
-  const galleryBlock = g.photos ? `<div class="detail-gallery">${galleryHTML(g)}</div>` : "";
+  const galleryBlock = g.photos ? `<div class="detail-gallery">${galleryHTML(g, 0)}</div>` : "";
   const videoHTML = g.video
     ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap${g.verticalVideo ? " vertical" : ""}"><iframe src="https://www.youtube.com/embed/${g.video}" title="Fernando Paizinho Guitars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
     : "";
