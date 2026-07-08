@@ -28,8 +28,8 @@ const I18N = {
     "g6.top": "Abeto Lunar MA · Tonewood Switzerland",
     "g6.bs": "Jacarandá de barcaça · 130 anos",
     "others.lede": "Construídos sob encomenda, com o mesmo rigor de seleção de madeiras e medição acústica dos violões.",
-    "others.cava": "Cavaquinho", "others.band": "Bandolim", "others.flamenca": "Guitarra Flamenca",
-    "m.lede": "O sistema construtivo aplicado aos violões.",
+    "others.cava": "Cavaquinho", "others.band": "Bandolim", "others.classica": "Violão Clássico", "others.flamenca": "Guitarra Flamenca",
+    "m.lede": "Este é o método construtivo dos violões de cordas de aço autorais PAIZINHO. Os violões clássicos seguem uma construção tradicional própria.",
     "m1.t": "Laterais duplas estruturadas",
     "m1.p": "Laterais duplas de alta rigidez que concentram a energia das cordas no tampo, seguindo a metodologia Gore/Nicoletti.",
     "method.lede": "O método construtivo dos violões PAIZINHO.",
@@ -71,8 +71,8 @@ const I18N = {
     "g6.top": "Moon Spruce MA · Tonewood Switzerland",
     "g6.bs": "Barge rosewood · 130 years old",
     "others.lede": "Built to order, with the same rigor in wood selection and acoustic measurement as the guitars.",
-    "others.cava": "Cavaquinho", "others.band": "Mandolin", "others.flamenca": "Flamenco Guitar",
-    "m.lede": "The construction system applied to the guitars.",
+    "others.cava": "Cavaquinho", "others.band": "Mandolin", "others.classica": "Classical Guitar", "others.flamenca": "Flamenco Guitar",
+    "m.lede": "This is the construction method behind PAIZINHO's signature steel-string guitars. Classical guitars follow their own traditional construction.",
     "m1.t": "Structural double sides",
     "m1.p": "High-stiffness double sides that concentrate string energy into the top, following the Gore/Nicoletti methodology.",
     "method.lede": "The construction method behind PAIZINHO guitars.",
@@ -114,10 +114,10 @@ const I18N = {
     "g6.top": "Abeto Lunar MA · Tonewood Switzerland",
     "g6.bs": "Jacarandá de barcaza · 130 años",
     "others.lede": "Construidos por encargo, con el mismo rigor en la selección de maderas y medición acústica que las guitarras.",
-    "others.cava": "Cavaquinho", "others.band": "Mandolina", "others.flamenca": "Guitarra Flamenca",
+    "others.cava": "Cavaquinho", "others.band": "Mandolina", "others.classica": "Guitarra Clásica", "others.flamenca": "Guitarra Flamenca",
     "m1.t": "Aros dobles estructurados",
     "m1.p": "Aros dobles de alta rigidez que concentran la energía de las cuerdas en la tapa, siguiendo la metodología Gore/Nicoletti.",
-    "method.lede": "El método constructivo de las guitarras PAIZINHO.",
+    "m.lede": "Este es el método constructivo de las guitarras de cuerdas de acero originales de PAIZINHO. Las guitarras clásicas siguen una construcción tradicional propia.",
     "m2.t": "Fondo activo",
     "m2.p": "El fondo trabaja junto con la tapa, afinado por modos de vibración para ampliar la proyección del instrumento.",
     "m3.t": "Tapas seleccionadas",
@@ -156,8 +156,8 @@ const I18N = {
     "g6.top": "ムーンスプルース MA · Tonewood Switzerland",
     "g6.bs": "運搬船由来のハカランダ · 樹齢130年",
     "others.lede": "ギターと同じ木材選定と音響測定の基準により、受注製作いたします。",
-    "others.cava": "カヴァキーニョ", "others.band": "マンドリン", "others.flamenca": "フラメンコギター",
-    "m.lede": "ギターの製作に用いられる構築システムです。",
+    "others.cava": "カヴァキーニョ", "others.band": "マンドリン", "others.classica": "クラシックギター", "others.flamenca": "フラメンコギター",
+    "m.lede": "これはPAIZINHOのオリジナルスチール弦ギターの製作方法です。クラシックギターは伝統的な独自の製法で作られます。",
     "m1.t": "構造用二重側板",
     "m1.p": "Gore/Nicoletti の設計理論に基づく高剛性の二重側板が、弦のエネルギーを表板に集中させます。",
     "method.lede": "PAIZINHO ギターの製作方法。",
@@ -383,6 +383,23 @@ const INSTRUMENTS = {
       ja: "ショーロのための10弦バンドリン。ヨーロッパ産スプルースの表板、受注製作。輝きと厚みのバランスの取れた声を持つ楽器です。"
     }
   },
+  classica: {
+    photo: "classico-frente.jpg", video: "UwlEjrjfouE",
+    photos: ["classico-tampo.jpg","classico-lateral.jpg"],
+    name: { pt: "Violão Clássico", en: "Classical Guitar", es: "Guitarra Clásica", ja: "クラシックギター" },
+    sub: {
+      pt: "Sob encomenda",
+      en: "Built to order",
+      es: "Por encargo",
+      ja: "受注製作"
+    },
+    desc: {
+      pt: "Violões clássicos construídos sob encomenda, com tampo em abeto alemão e fundo e laterais em jacarandá indiano — construção tradicional, para o repertório erudito e o violão brasileiro.",
+      en: "Classical guitars built to order, with a German spruce top and Indian rosewood back and sides — traditional construction, for classical repertoire and Brazilian violão playing.",
+      es: "Guitarras clásicas construidas por encargo, con tapa de abeto alemán y fondo y aros de palosanto de la India — construcción tradicional, para el repertorio clásico y el violão brasileño.",
+      ja: "受注製作のクラシックギター。ドイツ産スプルースの表板とインド産ローズウッドの裏板・側板による伝統的な製法。クラシック音楽やブラジルのヴィオラォンにも適した一本です。"
+    }
+  },
   flamenca: {
     photo: "flamenca.jpg", video: "VLqTh1DsPt8",
     name: { pt: "Guitarra Flamenca", en: "Flamenco Guitar", es: "Guitarra Flamenca", ja: "フラメンコギター" },
@@ -437,7 +454,7 @@ document.querySelectorAll(".lang-switch button").forEach(btn =>
 const detailEl = document.getElementById("detail");
 
 function currentDetail() {
-  const m = location.hash.match(/^#\/(g\d|cava|band|flamenca)$/);
+  const m = location.hash.match(/^#\/(g\d|cava|band|flamenca|classica)$/);
   if (!m) return null;
   return (GUITARS[m[1]] || INSTRUMENTS[m[1]]) ? m[1] : null;
 }
@@ -501,6 +518,7 @@ function renderInstrument(id) {
   const photoHTML = g.photo
     ? `<img class="detail-photo" src="${g.photo}" alt="${g.name.pt} PAIZINHO">`
     : `<div class="detail-photo ph" style="min-height:320px"><span class="ph-caption">${t("ph")}</span></div>`;
+  const galleryBlock = g.photos ? `<div class="detail-gallery">${galleryHTML(g)}</div>` : "";
   const videoHTML = g.video
     ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap${g.verticalVideo ? " vertical" : ""}"><iframe src="https://www.youtube.com/embed/${g.video}" title="PAIZINHO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
     : "";
@@ -513,6 +531,7 @@ function renderInstrument(id) {
     </div>
     <div class="detail-body">
       ${photoHTML}
+      ${galleryBlock}
       <p class="detail-desc">${g.desc[currentLang] || g.desc.pt}</p>
       ${videoHTML}
       <a class="order-btn" id="orderBtn" href="#contato">${t("order")}</a>
