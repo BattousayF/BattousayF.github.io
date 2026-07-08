@@ -334,12 +334,22 @@ body{
 .clickable:hover .guitar-photo,
 .clickable:focus-visible .guitar-photo{border-color:var(--brass)}
 .view-link{
-  margin-top:1rem;
+  display:inline-block;
+  margin-top:1.2rem;
   font-family:var(--mono);
-  font-size:.68rem;
-  letter-spacing:.24em;
+  font-weight:500;
+  font-size:.72rem;
+  letter-spacing:.16em;
   text-transform:uppercase;
-  color:var(--brass);
+  color:var(--wood);
+  border:1px solid var(--brass);
+  padding:.55rem 1.1rem;
+  transition:background .25s, color .25s;
+}
+.clickable:hover .view-link,
+.clickable:focus-visible .view-link{
+  background:var(--brass);
+  color:var(--paper);
 }
 
 /* ---------- detail pages ---------- */

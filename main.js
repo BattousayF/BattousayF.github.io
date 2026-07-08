@@ -303,7 +303,7 @@ const GUITARS = {
   }
 ,
   g8: {
-    no: "", theme: "jacaranda", video: "Roegn20_Yfs", photos: ["jacaranda-fundo.jpg","jacaranda-detalhe.jpg","jacaranda-headstock.jpg"],
+    no: "", theme: "jacaranda", video: "Roegn20_Yfs", photos: ["jacaranda-nova.jpg","jacaranda-fundo.jpg","jacaranda-detalhe.jpg"],
     labelKey: "lbl.done",
     name: { pt: "Jacarandá", en: "Jacarandá", es: "Jacarandá", ja: "ジャカランダ" },
     sub: {
@@ -324,7 +324,7 @@ const GUITARS = {
     ]
   },
   g7: {
-    no: "", theme: "pernambuco", video: "cOHwPLHxrcI", photos: ["pernambuco-fundo.jpg","pernambuco-roseta.jpg","pernambuco-headstock.jpg"],
+    no: "", theme: "pernambuco", video: "cOHwPLHxrcI", photos: ["pernambuco-roseta.jpg","pernambuco-fundo.jpg","pernambuco-headstock.jpg"],
     labelKey: "g7.label",
     name: { pt: "Pernambuco", en: "Pernambuco", es: "Pernambuco", ja: "ペルナンブーコ" },
     sub: {
@@ -368,7 +368,7 @@ const INSTRUMENTS = {
     }
   },
   band: {
-    photo: "bandolim.jpg", video: "ZLFNY8HECJs",
+    photo: "bandolim.jpg", video: "YDqFIkNvIJA", verticalVideo: true,
     name: { pt: "Bandolim", en: "Mandolin", es: "Mandolina", ja: "マンドリン" },
     sub: {
       pt: "Sob encomenda",
