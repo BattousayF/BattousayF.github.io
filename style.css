@@ -39,12 +39,25 @@ body{
 }
 .wordmark{
   font-family:var(--disp);
-  font-weight:400;
-  letter-spacing:.01em;
-  font-size:1.15rem;
   color:var(--ink);
   text-decoration:none;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  line-height:1.15;
+}
+.wordmark .wm-line1{
+  font-size:1.05rem;
+  letter-spacing:.01em;
   white-space:nowrap;
+}
+.wordmark .wm-sub{
+  margin-top:.2rem;
+  font-family:var(--mono);
+  font-size:.58rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--stone);
 }
 .wm-light{font-weight:400;}
 .wm-bold{font-weight:600;}
