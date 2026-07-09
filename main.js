@@ -11,8 +11,11 @@ const I18N = {
     "ph": "FOTOGRAFIA · EM BREVE",
     "view": "Ver →",
     "back": "← Voltar",
+    "knowmore": "Saiba mais",
     "order": "Encomendar →",
     "reserve": "Reservar →",
+    "viewcollection": "Ver toda a coleção →",
+    "fullcollection": "Coleção completa",
     "listen": "Ouça",
     "hero.sub": "Violões de concerto feitos à mão em São Paulo, Brasil",
     "manifesto": "Cada violão parte de uma seleção cuidadosa de madeiras — do Brasil e de outras partes do mundo — combinada a uma medição acústica precisa em cada etapa da construção.",
@@ -55,8 +58,11 @@ const I18N = {
     "ph": "PHOTOGRAPHY · COMING SOON",
     "view": "View →",
     "back": "← Back",
+    "knowmore": "Learn more",
     "order": "Commission →",
     "reserve": "Reserve →",
+    "viewcollection": "View full collection →",
+    "fullcollection": "Full Collection",
     "listen": "Listen",
     "hero.sub": "Handmade concert guitars from São Paulo, Brazil",
     "manifesto": "Every guitar starts with a careful selection of woods — from Brazil and other parts of the world — combined with precise acoustic measurement at every stage of construction.",
@@ -99,8 +105,11 @@ const I18N = {
     "ph": "FOTOGRAFÍA · PRÓXIMAMENTE",
     "view": "Ver →",
     "back": "← Volver",
+    "knowmore": "Saber más",
     "order": "Encargar →",
     "reserve": "Reservar →",
+    "viewcollection": "Ver toda la colección →",
+    "fullcollection": "Colección completa",
     "listen": "Escuchar",
     "hero.sub": "Guitarras de concierto hechas a mano en São Paulo, Brasil",
     "manifesto": "Cada guitarra parte de una cuidadosa selección de maderas — de Brasil y de otras partes del mundo — combinada con una medición acústica precisa en cada etapa de la construcción.",
@@ -143,8 +152,11 @@ const I18N = {
     "ph": "写真 · 近日公開",
     "view": "詳細 →",
     "back": "← 戻る",
+    "knowmore": "もっと見る",
     "order": "ご注文 →",
     "reserve": "予約する →",
+    "viewcollection": "コレクション全体を見る →",
+    "fullcollection": "全コレクション",
     "listen": "試聴",
     "hero.sub": "ブラジル・サンパウロで手工製作されるコンサートギター",
     "manifesto": "一本一本のギターは、厳選された木材から生まれます。百年を超えるハカランダ、下弦の月に伐採されたアルパイン・スプルース。構造用二重側板とアクティブバック、そして厳密な音響測定により、最初の一削りの前に楽器の声が設計されます。",
@@ -461,8 +473,9 @@ document.querySelectorAll(".lang-switch button").forEach(btn =>
 const detailEl = document.getElementById("detail");
 
 function currentDetail() {
-  const m = location.hash.match(/^#\/(g\d|cava|band|flamenca|classica)$/);
+  const m = location.hash.match(/^#\/(g\d|cava|band|flamenca|classica|colecao)$/);
   if (!m) return null;
+  if (m[1] === "colecao") return "colecao";
   return (GUITARS[m[1]] || INSTRUMENTS[m[1]]) ? m[1] : null;
 }
 
@@ -478,7 +491,36 @@ function petalsHTML() {
   return out;
 }
 
+function igLinkHTML() {
+  return `<a class="detail-back detail-ig" href="https://instagram.com/paizinho_luthier" target="_blank" rel="noopener"><span class="ig-more-text">${t("knowmore")} · </span>Instagram ↗</a>`;
+}
+
+function applyI18nIn(scopeEl) {
+  scopeEl.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (I18N[currentLang] && I18N[currentLang][key]) el.textContent = I18N[currentLang][key];
+  });
+}
+
+function renderCollection() {
+  const tmpl = document.getElementById("collectionTemplate");
+  detailEl.className = "detail theme-collection";
+  detailEl.innerHTML = `
+    <button class="detail-back" id="detailBack">${t("back")}</button>
+    <div class="collection-wrap">
+      <h2 class="collection-title">${t("fullcollection")}</h2>
+      ${tmpl.innerHTML}
+    </div>`;
+  applyI18nIn(detailEl);
+  detailEl.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
+  detailEl.hidden = false;
+  document.body.classList.add("detail-open");
+  detailEl.scrollTop = 0;
+  document.getElementById("detailBack").addEventListener("click", closeDetail);
+}
+
 function renderDetail(id) {
+  if (id === "colecao") { renderCollection(); return; }
   if (INSTRUMENTS[id]) { renderInstrument(id); return; }
   const g = GUITARS[id];
   const specRows = g.specs.map(([label, v]) =>
@@ -488,6 +530,7 @@ function renderDetail(id) {
   detailEl.className = "detail theme-" + g.theme;
   detailEl.innerHTML = `
     <button class="detail-back" id="detailBack">${t("back")}</button>
+    ${igLinkHTML()}
     <div class="detail-hero">
       ${g.theme === "eclipse" ? '<div class="corona"></div>' : ""}
       ${g.theme === "sakura" ? petalsHTML() : ""}
@@ -501,24 +544,12 @@ function renderDetail(id) {
       ${g.video ? `<p class="listen-label">${t("listen")}</p><div class="video-wrap"><iframe src="https://www.youtube.com/embed/${g.video}" title="Fernando Paizinho Guitars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>` : ""}
       <dl class="spec">${specRows}</dl>
       <div class="detail-gallery">${galleryHTML(g)}</div>
-      ${g.reservable ? `<a class="order-btn" id="reserveBtn" href="#contato">${t("reserve")}</a>` : ""}
+      ${g.reservable ? `<a class="order-btn" href="https://wa.me/5511971102172" target="_blank" rel="noopener">${t("reserve")}</a>` : ""}
     </div>`;
   detailEl.hidden = false;
   document.body.classList.add("detail-open");
   detailEl.scrollTop = 0;
   document.getElementById("detailBack").addEventListener("click", closeDetail);
-  const reserveBtn = document.getElementById("reserveBtn");
-  if (reserveBtn) {
-    reserveBtn.addEventListener("click", e => {
-      e.preventDefault();
-      history.pushState("", document.title, location.pathname + "#contato");
-      detailEl.hidden = true;
-      detailEl.innerHTML = "";
-      document.body.classList.remove("detail-open");
-      const c = document.getElementById("contato");
-      if (c) c.scrollIntoView({ behavior: "smooth" });
-    });
-  }
 }
 
 function galleryHTML(g, minSlots = 3) {
@@ -545,6 +576,7 @@ function renderInstrument(id) {
   detailEl.className = "detail theme-simple";
   detailEl.innerHTML = `
     <button class="detail-back" id="detailBack">${t("back")}</button>
+    ${igLinkHTML()}
     <div class="detail-hero">
       <h2 class="detail-title">${g.name[currentLang] || g.name.pt}</h2>
       <p class="detail-sub">${g.sub[currentLang] || g.sub.pt}</p>
@@ -554,21 +586,12 @@ function renderInstrument(id) {
       ${galleryBlock}
       <p class="detail-desc">${g.desc[currentLang] || g.desc.pt}</p>
       ${videoHTML}
-      <a class="order-btn" id="orderBtn" href="#contato">${t("order")}</a>
+      <a class="order-btn" href="https://wa.me/5511971102172" target="_blank" rel="noopener">${t("order")}</a>
     </div>`;
   detailEl.hidden = false;
   document.body.classList.add("detail-open");
   detailEl.scrollTop = 0;
   document.getElementById("detailBack").addEventListener("click", closeDetail);
-  document.getElementById("orderBtn").addEventListener("click", e => {
-    e.preventDefault();
-    history.pushState("", document.title, location.pathname + "#contato");
-    detailEl.hidden = true;
-    detailEl.innerHTML = "";
-    document.body.classList.remove("detail-open");
-    const c = document.getElementById("contato");
-    if (c) c.scrollIntoView({ behavior: "smooth" });
-  });
 }
 
 function closeDetail() {
@@ -591,12 +614,17 @@ function syncFromHash() {
 }
 window.addEventListener("hashchange", syncFromHash);
 
-document.querySelectorAll(".clickable[data-guitar], .clickable[data-inst]").forEach(card => {
-  const open = () => { location.hash = "#/" + (card.dataset.guitar || card.dataset.inst); };
-  card.addEventListener("click", open);
-  card.addEventListener("keydown", e => {
-    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
-  });
+document.addEventListener("click", e => {
+  const card = e.target.closest(".clickable[data-guitar], .clickable[data-inst]");
+  if (!card) return;
+  location.hash = "#/" + (card.dataset.guitar || card.dataset.inst);
+});
+document.addEventListener("keydown", e => {
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const card = e.target.closest(".clickable[data-guitar], .clickable[data-inst]");
+  if (!card) return;
+  e.preventDefault();
+  location.hash = "#/" + (card.dataset.guitar || card.dataset.inst);
 });
 
 /* -------- idioma salvo -------- */
@@ -611,6 +639,46 @@ navToggle.addEventListener("click", () => siteNav.classList.toggle("open"));
 siteNav.querySelectorAll("a").forEach(a =>
   a.addEventListener("click", () => siteNav.classList.remove("open"))
 );
+
+/* -------- carrossel: outros instrumentos (loop infinito) -------- */
+const othersRow = document.getElementById("othersRow");
+const othersPrev = document.getElementById("othersPrev");
+const othersNext = document.getElementById("othersNext");
+
+if (othersRow && othersPrev && othersNext) {
+  const scrollByCard = dir => {
+    const card = othersRow.querySelector(".other");
+    const amount = card ? card.getBoundingClientRect().width + 24 : 260;
+    othersRow.scrollBy({ left: dir * amount, behavior: "smooth" });
+  };
+  othersPrev.addEventListener("click", () => scrollByCard(-1));
+  othersNext.addEventListener("click", () => scrollByCard(1));
+
+  const initLoop = () => {
+    const setWidth = othersRow.scrollWidth / 3;
+    if (setWidth > 0) othersRow.scrollLeft = setWidth;
+  };
+
+  let ticking = false;
+  othersRow.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const setWidth = othersRow.scrollWidth / 3;
+      if (setWidth > 0) {
+        if (othersRow.scrollLeft < setWidth * 0.5) {
+          othersRow.scrollLeft += setWidth;
+        } else if (othersRow.scrollLeft > setWidth * 1.5) {
+          othersRow.scrollLeft -= setWidth;
+        }
+      }
+      ticking = false;
+    });
+  });
+
+  window.addEventListener("load", initLoop);
+  setTimeout(initLoop, 300);
+}
 
 /* -------- scroll reveal -------- */
 const io = new IntersectionObserver(entries => {

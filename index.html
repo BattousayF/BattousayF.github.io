@@ -54,6 +54,52 @@
     <h2 class="section-title" data-i18n="nav.guitars">Violões</h2>
     <p class="section-lede" data-i18n="violoes.lede">Violões de cordas de aço autorais</p>
 
+    <article class="guitar featured reveal clickable" data-guitar="g8" tabindex="0" role="link">
+      <div class="guitar-photo tall"><img class="card-img" src="jacaranda-frente.jpg" alt="Violão Jacarandá — redwood e jacarandá-da-bahia"></div>
+      <div class="guitar-info">
+        <p class="guitar-no" data-i18n="lbl.done">Vendido</p>
+        <h3 class="guitar-name" data-i18n="g8.name">Jacarandá</h3>
+        <dl class="spec">
+          <div><dt data-i18n="spec.top">Tampo</dt><dd>Redwood</dd></div>
+          <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="g8.bs">Jacarandá-da-bahia</dd></div>
+        </dl>
+        <p class="view-link" data-i18n="view">Ver →</p>
+      </div>
+    </article>
+
+    <div class="guitar-grid">
+      <article class="guitar reveal clickable" data-guitar="g1" tabindex="0" role="link">
+        <div class="guitar-photo"><img class="card-img" src="eclipse-processo.jpg" alt="Violões Eclipse em construção"></div>
+        <div class="guitar-info">
+          <p class="guitar-no">Nº 01</p>
+          <h3 class="guitar-name">Eclipse</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd>Sinker Redwood</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="w.jacba">Jacarandá baiano</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+      <article class="guitar reveal clickable" data-guitar="g7" tabindex="0" role="link">
+        <div class="guitar-photo"><img class="card-img" src="pernambuco.jpg" alt="Violão Pernambuco — pau-brasil e sinker redwood"></div>
+        <div class="guitar-info">
+          <p class="guitar-no" data-i18n="g7.label">Instrumento pessoal</p>
+          <h3 class="guitar-name">Pernambuco</h3>
+          <dl class="spec">
+            <div><dt data-i18n="spec.top">Tampo</dt><dd>Sinker Redwood</dd></div>
+            <div><dt data-i18n="spec.bs">Fundo e laterais</dt><dd data-i18n="g7.bs">Pau-brasil</dd></div>
+          </dl>
+          <p class="view-link" data-i18n="view">Ver →</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="collection-link">
+      <a href="#/colecao" class="collection-btn" data-i18n="viewcollection">Ver toda a coleção →</a>
+    </p>
+  </section>
+
+  <template id="collectionTemplate">
     <article class="guitar featured reveal clickable" data-guitar="g6" tabindex="0" role="link">
       <div class="guitar-photo tall"><img class="card-img" src="hitohira-molde.jpg" alt="Hitohira em construção — molde e jacarandá"></div>
       <div class="guitar-info">
@@ -154,41 +200,102 @@
           <p class="view-link" data-i18n="view">Ver →</p>
         </div>
       </article>
-
-
-
-
-
-
-
-
     </div>
-  </section>
+  </template>
+
 
   <section id="outros" class="section reveal">
     <h2 class="section-title" data-i18n="nav.others">Outros instrumentos</h2>
     <p class="section-lede" data-i18n="others.lede">Construídos sob encomenda, com o mesmo rigor de seleção de madeiras e medição acústica dos violões.</p>
-    <div class="others-row">
-      <div class="other clickable" data-inst="cava" tabindex="0" role="link">
-        <div class="other-photo"><img class="card-img" src="cavaquinhos.jpg" alt="Cavaquinhos Fernando Paizinho Guitars"></div>
-        <h3 data-i18n="others.cava">Cavaquinho</h3>
-        <p class="view-link" data-i18n="view">Ver →</p>
+    <div class="others-carousel">
+      <button class="car-arrow car-prev" id="othersPrev" aria-label="Anterior">‹</button>
+      <div class="others-row" id="othersRow">
+        <div class="other clickable" data-inst="cava" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="cavaquinhos.jpg" alt="Cavaquinhos Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.cava">Cavaquinho</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="band" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="bandolim.jpg" alt="Bandolim Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.band">Bandolim</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="classica" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="classico-frente.jpg" alt="Violão Clássico Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.classica">Violão Clássico</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="flamenca" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="flamenca.jpg" alt="Guitarra Flamenca Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.flamenca">Guitarra Flamenca</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="cava" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="cavaquinhos.jpg" alt="Cavaquinhos Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.cava">Cavaquinho</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="band" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="bandolim.jpg" alt="Bandolim Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.band">Bandolim</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="classica" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="classico-frente.jpg" alt="Violão Clássico Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.classica">Violão Clássico</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="flamenca" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="flamenca.jpg" alt="Guitarra Flamenca Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.flamenca">Guitarra Flamenca</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="cava" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="cavaquinhos.jpg" alt="Cavaquinhos Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.cava">Cavaquinho</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="band" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="bandolim.jpg" alt="Bandolim Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.band">Bandolim</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="classica" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="classico-frente.jpg" alt="Violão Clássico Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.classica">Violão Clássico</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
+        <div class="other clickable" data-inst="flamenca" tabindex="0" role="link">
+          <div class="other-photo"><img class="card-img" src="flamenca.jpg" alt="Guitarra Flamenca Fernando Paizinho Guitars"></div>
+          <div class="other-body">
+            <h3 data-i18n="others.flamenca">Guitarra Flamenca</h3>
+            <p class="view-link" data-i18n="view">Ver →</p>
+          </div>
+        </div>
       </div>
-      <div class="other clickable" data-inst="band" tabindex="0" role="link">
-        <div class="other-photo"><img class="card-img" src="bandolim.jpg" alt="Bandolim Fernando Paizinho Guitars"></div>
-        <h3 data-i18n="others.band">Bandolim</h3>
-        <p class="view-link" data-i18n="view">Ver →</p>
-      </div>
-      <div class="other clickable" data-inst="classica" tabindex="0" role="link">
-        <div class="other-photo"><img class="card-img" src="classico-frente.jpg" alt="Violão Clássico Fernando Paizinho Guitars"></div>
-        <h3 data-i18n="others.classica">Violão Clássico</h3>
-        <p class="view-link" data-i18n="view">Ver →</p>
-      </div>
-      <div class="other clickable" data-inst="flamenca" tabindex="0" role="link">
-        <div class="other-photo"><img class="card-img" src="flamenca.jpg" alt="Guitarra Flamenca Fernando Paizinho Guitars"></div>
-        <h3 data-i18n="others.flamenca">Guitarra Flamenca</h3>
-        <p class="view-link" data-i18n="view">Ver →</p>
-      </div>
+      <button class="car-arrow car-next" id="othersNext" aria-label="Próximo">›</button>
     </div>
   </section>
 
