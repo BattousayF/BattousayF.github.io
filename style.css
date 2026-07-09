@@ -714,13 +714,30 @@ body.detail-open{overflow:hidden}
 
 /* link "Saiba mais · Instagram" nas páginas de detalhe */
 .detail-ig{
-  left:auto;
-  right:1.4rem;
-  font-size:.66rem;
+  position:fixed;
+  top:1rem;
+  right:1.3rem;
+  z-index:110;
+  display:flex;
+  align-items:center;
+  gap:.45rem;
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:.72rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--wood);
+  background:var(--paper);
+  border:1px solid var(--brass);
+  padding:.55rem 1rem;
   text-decoration:none;
+  box-shadow:0 2px 10px rgba(0,0,0,.12);
+  transition:background .25s, color .25s;
 }
+.detail-ig:hover{background:var(--brass);color:var(--paper)}
+.ig-icon{flex:0 0 auto}
 
 @media (max-width:480px){
-  .detail-ig{right:1rem; font-size:.62rem}
+  .detail-ig{right:.9rem; top:.9rem; font-size:.66rem; padding:.5rem .8rem}
   .ig-more-text{display:none}
 }

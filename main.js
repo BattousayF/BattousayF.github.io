@@ -492,7 +492,10 @@ function petalsHTML() {
 }
 
 function igLinkHTML() {
-  return `<a class="detail-back detail-ig" href="https://instagram.com/paizinho_luthier" target="_blank" rel="noopener"><span class="ig-more-text">${t("knowmore")} · </span>Instagram ↗</a>`;
+  return `<a class="detail-ig" href="https://instagram.com/paizinho_luthier" target="_blank" rel="noopener">
+    <svg class="ig-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+    <span class="ig-more-text">${t("knowmore")} · </span>Instagram
+  </a>`;
 }
 
 function applyI18nIn(scopeEl) {
