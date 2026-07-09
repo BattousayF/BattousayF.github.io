@@ -387,7 +387,7 @@ const INSTRUMENTS = {
   },
   band: {
     photo: "bandolim.jpg", video: "YDqFIkNvIJA", verticalVideo: true,
-    photos: ["bandolim-caso.jpg","bandolim-cabeca.jpg","bandolim-tampo.jpg"],
+    photos: ["bandolim-detalhe.jpg","bandolim-caso.jpg","bandolim-cabeca.jpg","bandolim-tampo.jpg","bandolim-maple-cabeca.jpg","bandolim-maple-frente.jpg"],
     name: { pt: "Bandolim", en: "Mandolin", es: "Mandolina", ja: "マンドリン" },
     sub: {
       pt: "Sob encomenda",
