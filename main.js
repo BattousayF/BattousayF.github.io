@@ -36,7 +36,7 @@ const I18N = {
     "others.cava": "Cavaquinho", "others.band": "Bandolim", "others.classica": "Violão Clássico", "others.flamenca": "Guitarra Flamenca",
     "m.lede": "Este é o método construtivo dos violões de cordas de aço autorais da Fernando Paizinho Guitars. Os violões clássicos seguem uma construção tradicional própria.",
     "m1.t": "Laterais duplas estruturadas",
-    "m1.p": "Laterais duplas de alta rigidez que concentram a energia das cordas no tampo, com base na escola de Gore e Nicoletti, adaptada ao olhar autoral de Fernando Paizinho.",
+    "m1.p": "Laterais duplas estruturadas reduzem drasticamente a torção do corpo, dando mais estabilidade ao instrumento e liberando o tampo para fazer seu trabalho — vibrar livremente e projetar o som.",
     "m2.t": "Fundo ativo",
     "m2.p": "O fundo trabalha junto com o tampo, afinado por modos de vibração para ampliar a projeção do instrumento.",
     "m3.t": "Tampos selecionados",
@@ -83,7 +83,7 @@ const I18N = {
     "others.cava": "Cavaquinho", "others.band": "Mandolin", "others.classica": "Classical Guitar", "others.flamenca": "Flamenco Guitar",
     "m.lede": "This is the construction method behind Fernando Paizinho Guitars' signature steel-string models. Classical guitars follow their own traditional construction.",
     "m1.t": "Structural double sides",
-    "m1.p": "High-stiffness double sides that concentrate string energy into the top, drawing on the Gore/Nicoletti school and adapted through the personal approach of Fernando Paizinho.",
+    "m1.p": "Structural double sides drastically reduce body torsion, adding stability to the instrument and freeing the top to do its work — vibrating freely and projecting sound.",
     "m2.t": "Active back",
     "m2.p": "The back works together with the top, tuned by vibration modes to extend the instrument's projection.",
     "m3.t": "Selected soundboards",
@@ -129,7 +129,7 @@ const I18N = {
     "others.lede": "Construidos por encargo, con el mismo rigor en la selección de maderas y medición acústica que las guitarras.",
     "others.cava": "Cavaquinho", "others.band": "Mandolina", "others.classica": "Guitarra Clásica", "others.flamenca": "Guitarra Flamenca",
     "m1.t": "Aros dobles estructurados",
-    "m1.p": "Aros dobles de alta rigidez que concentran la energía de las cuerdas en la tapa, con base en la escuela de Gore y Nicoletti, adaptada a la mirada autoral de Fernando Paizinho.",
+    "m1.p": "Los aros dobles estructurados reducen drásticamente la torsión del cuerpo, dando más estabilidad al instrumento y liberando la tapa para hacer su trabajo — vibrar libremente y proyectar el sonido.",
     "m.lede": "Este es el método constructivo de las guitarras de cuerdas de acero originales de Fernando Paizinho Guitars. Las guitarras clásicas siguen una construcción tradicional propia.",
     "m2.t": "Fondo activo",
     "m2.p": "El fondo trabaja junto con la tapa, afinado por modos de vibración para ampliar la proyección del instrumento.",
@@ -177,7 +177,7 @@ const I18N = {
     "others.cava": "カヴァキーニョ", "others.band": "マンドリン", "others.classica": "クラシックギター", "others.flamenca": "フラメンコギター",
     "m.lede": "これはFernando Paizinho Guitarsのオリジナルスチール弦ギターの製作方法です。クラシックギターは伝統的な独自の製法で作られます。",
     "m1.t": "構造用二重側板",
-    "m1.p": "Gore と Nicoletti の理論を参考にしながら、フェルナンド・パイジーニョ独自の解釈を加えた高剛性の二重側板が、弦のエネルギーを表板に集中させます。",
+    "m1.p": "構造用二重側板はボディのねじれを大幅に低減し、楽器により高い安定性を与え、表板が自由に振動して音を響かせる本来の仕事に専念できるようにします。",
     "m2.t": "アクティブバック",
     "m2.p": "裏板が表板とともに振動するよう振動モードを調整し、楽器の音の伸びと投射力を高めます。",
     "m3.t": "厳選された表板",
@@ -194,7 +194,7 @@ const I18N = {
 /* -------- dados das páginas de detalhe -------- */
 const GUITARS = {
   g1: {
-    no: "Nº 01", theme: "eclipse", photos: ["eclipse-processo.jpg"], reservable: true,
+    no: "Nº 01", theme: "eclipse", photos: ["eclipse-processo.jpg","eclipse1-caixa.jpg"], reservable: true,
     name: { pt: "Eclipse", en: "Eclipse", es: "Eclipse", ja: "エクリプス" },
     sub: {
       pt: "A sombra que revela a luz",
@@ -216,7 +216,7 @@ const GUITARS = {
     ]
   },
   g2: {
-    no: "Nº 02", theme: "eclipse", photos: ["eclipse-processo.jpg"], reservable: true,
+    no: "Nº 02", theme: "eclipse", photos: ["eclipse-processo.jpg","eclipse2-tampo.jpg","eclipse2-caixa.jpg"], reservable: true,
     name: { pt: "Eclipse", en: "Eclipse", es: "Eclipse", ja: "エクリプス" },
     sub: {
       pt: "A sombra que revela a luz",
@@ -238,7 +238,7 @@ const GUITARS = {
     ]
   },
   g3: {
-    no: "Nº 03", theme: "maple", photos: ["maple-processo.jpg"], reservable: true,
+    no: "Nº 03", theme: "maple", photos: ["maple-processo.jpg","maple-bracing.jpg"], reservable: true,
     name: { pt: "Maple", en: "Maple", es: "Maple", ja: "メイプル" },
     sub: {
       pt: "Figuras raras, linhas tradicionais",

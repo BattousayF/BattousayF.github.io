@@ -18,7 +18,7 @@ html[lang="ja"]{
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth; overflow-x:hidden;}
 body{
   background:var(--paper);
   color:var(--ink);
@@ -26,6 +26,7 @@ body{
   font-size:16px;
   line-height:1.7;
   -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
 
 /* ---------- header ---------- */
@@ -47,20 +48,30 @@ body{
   line-height:1.15;
 }
 .wordmark .wm-line1{
-  font-size:1.05rem;
-  letter-spacing:.01em;
+  font-size:1.22rem;
+  letter-spacing:.015em;
   white-space:nowrap;
 }
 .wordmark .wm-sub{
-  margin-top:.2rem;
+  margin-top:.4rem;
   font-family:var(--mono);
-  font-size:.58rem;
-  letter-spacing:.28em;
+  font-weight:500;
+  font-size:.62rem;
+  letter-spacing:.32em;
   text-transform:uppercase;
-  color:var(--stone);
+  color:var(--brass);
+  position:relative;
+  padding-top:.4rem;
+}
+.wordmark .wm-sub::before{
+  content:"";
+  position:absolute;
+  top:0;left:0;
+  width:22px;height:1px;
+  background:var(--brass);
 }
 .wm-light{font-weight:400;}
-.wm-bold{font-weight:600;}
+.wm-bold{font-weight:700;}
 .site-nav{display:flex;gap:1.6rem;margin-left:auto}
 .site-nav a{
   color:var(--stone);
@@ -97,12 +108,12 @@ body{
 /* ---------- hero ---------- */
 .hero{
   position:relative;
-  min-height:92vh;
+  min-height:55vh;
   display:flex;flex-direction:column;
 }
 .hero-photo{flex:1;border:0;border-bottom:1px solid var(--line)}
 .hero-text{
-  padding:2.5rem 2rem 1.5rem;
+  padding:1.25rem 2rem 1.5rem;
   text-align:center;
 }
 .hero-title{
@@ -264,8 +275,8 @@ body{
   background:var(--wood);
   color:var(--paper);
   text-align:center;
-  padding:5.5rem 2rem 3.5rem;
-  margin-top:4.5rem;
+  padding:4.5rem 2rem 3.5rem;
+  margin-top:1.5rem;
 }
 .section-title.light{color:color-mix(in srgb,var(--paper) 55%, transparent)}
 .contact-lede{
@@ -348,12 +359,16 @@ body{
   color:var(--wood);
   border:1px solid var(--brass);
   padding:.55rem 1.1rem;
-  transition:background .25s, color .25s;
+  background:linear-gradient(180deg, var(--paper) 0%, color-mix(in srgb, var(--paper) 82%, var(--stone) 18%) 100%);
+  box-shadow:0 1px 2px rgba(46,32,21,.08), 0 3px 7px rgba(46,32,21,.12);
+  transition:background .25s, color .25s, box-shadow .2s, transform .2s;
 }
 .clickable:hover .view-link,
 .clickable:focus-visible .view-link{
   background:var(--brass);
   color:var(--paper);
+  box-shadow:0 4px 10px rgba(46,32,21,.25);
+  transform:translateY(-1px);
 }
 
 /* ---------- detail pages ---------- */
@@ -364,16 +379,26 @@ body{
 }
 body.detail-open{overflow:hidden}
 .detail-back{
-  position:fixed;top:1.1rem;left:1.4rem;z-index:110;
-  background:none;border:0;cursor:pointer;
+  position:fixed;top:1rem;left:1.3rem;z-index:110;
+  background:var(--wood);
+  border:1px solid var(--wood);
+  cursor:pointer;
   font-family:var(--mono);font-size:.72rem;
-  letter-spacing:.2em;text-transform:uppercase;
-  color:inherit;
-  padding:.5rem .7rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--paper);
+  padding:.55rem 1rem;
+  box-shadow:0 2px 5px rgba(23,19,15,.25), inset 0 1px 0 rgba(255,255,255,.08);
+  transition:background .2s, transform .15s, box-shadow .15s;
 }
+.detail-back:hover{
+  background:var(--brass);border-color:var(--brass);
+  transform:translateY(-1px);
+  box-shadow:0 4px 9px rgba(23,19,15,.3), inset 0 1px 0 rgba(255,255,255,.12);
+}
+.detail-back:active{transform:translateY(0);box-shadow:0 1px 2px rgba(23,19,15,.25)}
 .detail-hero{
   position:relative;
-  min-height:62vh;
+  min-height:58vh;
   display:flex;flex-direction:column;
   align-items:center;justify-content:center;
   text-align:center;
@@ -429,7 +454,6 @@ body.detail-open{overflow:hidden}
 
 /* themes */
 .theme-eclipse .detail-hero{background:#100E14;color:#F3EFE6}
-.theme-eclipse .detail-back{color:#F3EFE6}
 .corona{
   position:absolute;z-index:1;
   width:min(52vw,340px);height:min(52vw,340px);
@@ -459,7 +483,6 @@ body.detail-open{overflow:hidden}
 
 .theme-maple .detail-hero{background:linear-gradient(180deg,#F8F1E1 0%,#EFE2C6 100%)}
 .theme-imbuia .detail-hero{background:linear-gradient(180deg,#3E2E1F 0%,#2C2015 100%);color:#F3EDE2}
-.theme-imbuia .detail-back{color:#F3EDE2}
 .theme-arariba .detail-hero{background:linear-gradient(180deg,#F0F3F1 0%,#DEE7E2 100%)}
 
 @media (prefers-reduced-motion:reduce){
@@ -475,7 +498,7 @@ body.detail-open{overflow:hidden}
 .hero-img{
   width:100%;height:100%;
   object-fit:cover;
-  object-position:center 40%;
+  object-position:100% center;
   display:block;
   position:absolute;inset:0;
 }
@@ -565,10 +588,8 @@ body.detail-open{overflow:hidden}
 
 .about-photo{overflow:hidden;border:1px solid var(--line);max-height:520px}
 .theme-pernambuco .detail-hero{background:linear-gradient(180deg,#3A1E12 0%,#26130B 100%);color:#F5EDE2}
-.theme-pernambuco .detail-back{color:#F5EDE2}
 
 .theme-jacaranda .detail-hero{background:linear-gradient(180deg,#2E2018 0%,#1C130D 100%);color:#F3EDE2}
-.theme-jacaranda .detail-back{color:#F3EDE2}
 
 /* video embed */
 .listen-label{
@@ -592,12 +613,23 @@ body.detail-open{overflow:hidden}
 }
 
 .hero-role{
-  margin-top:.7rem;
+  margin-top:.5rem;
   font-family:var(--mono);
-  font-size:.66rem;
+  font-weight:500;
+  font-size:.72rem;
   letter-spacing:.5em;
   text-indent:.5em;
-  color:var(--stone);
+  color:var(--brass);
+  position:relative;
+  padding-top:.45rem;
+}
+.hero-role::before{
+  content:"";
+  position:absolute;
+  top:0;left:50%;
+  transform:translateX(-50%);
+  width:32px;height:1px;
+  background:var(--brass);
 }
 
 /* contact methods */
@@ -689,9 +721,12 @@ body.detail-open{overflow:hidden}
   border:1px solid var(--brass);
   padding:.85rem 1.8rem;
   text-decoration:none;
-  transition:background .25s, color .25s;
+  background:linear-gradient(180deg, var(--paper) 0%, color-mix(in srgb, var(--paper) 82%, var(--stone) 18%) 100%);
+  box-shadow:0 1px 2px rgba(46,32,21,.08), 0 3px 8px rgba(46,32,21,.14);
+  transition:background .25s, color .25s, box-shadow .2s, transform .2s;
 }
-.collection-btn:hover{background:var(--brass);color:var(--paper)}
+.collection-btn:hover{background:var(--brass);color:var(--paper);box-shadow:0 5px 12px rgba(46,32,21,.28);transform:translateY(-1px)}
+.collection-btn:active{transform:translateY(0);box-shadow:0 1px 3px rgba(46,32,21,.2)}
 
 /* ---------- página "coleção completa" ---------- */
 .theme-collection{background:var(--paper)}
@@ -740,4 +775,25 @@ body.detail-open{overflow:hidden}
 @media (max-width:480px){
   .detail-ig{right:.9rem; top:.9rem; font-size:.66rem; padding:.5rem .8rem}
   .ig-more-text{display:none}
+}
+
+/* moldura dourada sutil + marca d'água nos cantos da seção Método */
+.metodo-framed{
+  position:relative;
+  border:1px solid var(--brass);
+  padding:4.5rem 2.5rem;
+}
+.metodo-watermark{
+  position:absolute;
+  width:365px;
+  max-width:80%;
+  opacity:.09;
+  pointer-events:none;
+  z-index:-1;
+}
+.metodo-watermark.tl{top:14px;left:14px}
+.metodo-watermark.br{bottom:14px;right:14px}
+@media (max-width:640px){
+  .metodo-framed{padding:3rem 1.5rem}
+  .metodo-watermark{width:220px}
 }
